@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Kepuasan Pelanggan</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #1e88e5, #1565c0);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 500px;
+            background: #ffffff;
+            margin: 40px auto;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #1565c0;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: 600;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .option-group {
+            margin-top: 8px;
+        }
+
+        .option-group input {
+            margin-right: 6px;
+        }
+
+        .option-group label {
+            display: inline-block;
+            margin-right: 15px;
+            font-weight: normal;
+        }
+
+        .buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 48%;
+        }
+
+        button[type="submit"] {
+            background-color: #1e88e5;
+            color: white;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #1565c0;
+        }
+
+        button[type="reset"] {
+            background-color: #ccc;
+        }
+
+        button[type="reset"]:hover {
+            background-color: #999;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Survey Kepuasan Pelanggan</h2>
+
+    <form action="#" method="post">
+
+        <!-- Data Pelanggan -->
+        <label>Nama</label>
+        <input type="text" name="nama" required>
+
+        <label>Alamat</label>
+        <input type="text" name="alamat">
+
+        <label>No. Telepon</label>
+        <input type="tel" name="telepon">
+
+        <!-- Dropdown -->
+        <label>Kategori Pelanggan</label>
+        <select name="kategori">
+            <option value="">Pilih</option>
+            <option value="baru">Pelanggan Baru</option>
+            <option value="lama">Pelanggan Lama</option>
+            <option value="vip">VIP</option>
+        </select>
+
+        <!-- Checkbox -->
+        <label>Produk yang Disukai</label>
+        <div class="option-group">
+            <label><input type="checkbox" name="produk" value="A"> Ayam Geprek</label>
+            <label><input type="checkbox" name="produk" value="B"> Ramen</label>
+            <label><input type="checkbox" name="produk" value="C"> Lumpia Basah</label>
+        </div>
+
+        <!-- Radio -->
+        <label>Tingkat Kepuasan</label>
+        <div class="option-group">
+            <label><input type="radio" name="kepuasan" value="sangat_puas"> Sangat Puas</label>
+            <label><input type="radio" name="kepuasan" value="puas"> Puas</label>
+            <label><input type="radio" name="kepuasan" value="cukup"> Cukup</label>
+            <label><input type="radio" name="kepuasan" value="kurang"> Kurang</label>
+        </div>
+
+        <!-- Text Area -->
+        <label>Komentar</label>
+        <textarea name="komentar" rows="4" placeholder="Tulis komentar Anda..."></textarea>
+
+        <!-- Tombol -->
+        <div class="buttons">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
