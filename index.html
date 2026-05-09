@@ -1,15 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>UTS Pemrograman Web - Home</title>
+    <!-- 1a. Menggunakan Eksternal Style Sheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<frameset cols=20%,*>
-    <frame src="menu.html"></frame>
-    <frame src="biodata.html" name="kanan"></frame>
-</frameset>
 <body>
-    
+
+    <!-- 1b & 1c. Navbar untuk akses ke setiap halaman -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container animate">
+        <div class="profile-frame">
+            <!-- Foto Profil dengan hover effect (Transisi & Animasi) -->
+            <img src="./WIN_20251104_20_10_45_Pro.jpg" alt="Foto Profil" class="photo" onerror="this.src='https://via.placeholder.com/160'">
+            <h1>Muhammad Ilham Ropi Nawawi</h1>
+            <p style="color: #4a5568; font-weight: 600;">Mahasiswa Teknik Informatika</p>
+        </div>
+
+        <section id="biodata">
+            <h2>Tentang Saya</h2>
+            <p>
+                Saya adalah mahasiswa program studi Teknik Informatika di Universitas Halim Sanusi Bandung. 
+                Memiliki latar belakang pendidikan di bidang Desain Komunikasi Visual (DKV), 
+                saya memiliki ketertarikan yang besar dalam menggabungkan estetika desain dengan logika pemrograman.
+            </p>
+
+            <ul>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2026 Muhammad Ilham Ropi Nawawi
+    </footer>
+
 </body>
 </html>

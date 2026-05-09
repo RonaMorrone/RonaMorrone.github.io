@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS Pemrograman Web - Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container animate">
+        <h1>Kontak & Feedback</h1>
+        <p>Ada pertanyaan atau ingin menjalin kerjasama? Silakan hubungi saya melalui formulir di bawah ini atau melalui saluran kontak sosial media.</p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 30px;">
+            
+            <!-- Contact Info -->
+            <div>
+                <h2>Info Kontak</h2>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 15px;"><strong>📍 Alamat:</strong> Sumedang, Jawa Barat</li>
+                    <li style="margin-bottom: 15px;"><strong>📞 WhatsApp:</strong> 0881023047500</li>
+                    <li style="margin-bottom: 15px;"><strong>✉️ Email:</strong> ilhamropi282@gmail.com</li>
+                    <li style="margin-bottom: 15px;"><strong>📸 Instagram:</strong> <a href="https://www.instagram.com/ronamorrone" target="_blank" style="color: #1e88e5;">@ronamorrone</a></li>
+                </ul>
+            </div>
+
+            <!-- Feedback Form -->
+            <div>
+                <h2>Kirim Pesan</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="nama">Nama</label>
+                        <input type="text" id="nama" name="nama" required placeholder="Nama Lengkap">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subjek">Subjek</label>
+                        <select id="subjek" name="subjek">
+                            <option value="umum">Pertanyaan Umum</option>
+                            <option value="kerjasama">Kerjasama Proyek</option>
+                            <option value="akademik">Topik Akademik</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pesan">Pesan</label>
+                        <textarea id="pesan" name="pesan" rows="4" placeholder="Tuliskan pesan Anda..."></textarea>
+                    </div>
+
+                    <button type="submit">Kirim Sekarang</button>
+                    <button type="reset" style="background-color: #f1f5f9; color: #4a5568; margin-top: 10px;">Reset Form</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Muhammad Ilham Ropi Nawawi - Universitas Halim Sanusi
+    </footer>
+
+</body>
+</html>
